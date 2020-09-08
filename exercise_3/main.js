@@ -31,7 +31,7 @@ function removeMole(randomMoleHole) {
 function addPoint(event) {
     let m = event.target
     let myPoints = parseInt(document.getElementsByClassName('points')[0].innerText)
-    if (m.innerText == document.getElementsByClassName('mole')[0].innerText) {
+    if (m && m.innerText == document.getElementsByClassName('mole')[0].innerText) {
         myPoints += 1
     }
     document.getElementsByClassName('points')[0].innerText = myPoints

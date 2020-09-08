@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Exercise 2</title>
 </head>
 <body>
-    <h2>Online Supermarket</h2>
-    <table id="all-items">
-        <tr>
-            <th>Item</th>
-            <th>Price</th>
-            <th></th>
-        </tr>
-        <tr id="first-item" class="item-content">
-            <td class="item-name">Chocolate bar (200g)</td>
-            <td class="price">5</td>
-            <td><input type="button" value="Add to Cart"></td>
-        </tr>
-        <tr class="item-content">
-            <td class="item-name">Box of strawberries (150g)</td>
-            <td class="price">3</td>
-            <td><input type="button" value="Add to Cart"></td>
-        </tr>
-        <tr class="item-content">
-            <td class="item-name">Roast chicken</td>
-            <td class="price">10</td>
-            <td><input type="button" value="Add to Cart"></td>
-        </tr>
-        <tr class="item-content">
-            <td class="item-name">Toilet paper (24 pack)</td>
-            <td class="price">7</td>
-            <td><input type="button" value="Add to Cart"></td>
-        </tr>
-        <tr class="item-content">
-            <td class="item-name">Bag of potatoes (2kg)</td>
-            <td class="price">5</td>
-            <td><input type="button" value="Add to Cart"></td>
-        </tr>
-    </table>
+    <div class="container">
+        <h2>Gifts for Her</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <p class="shop-item-title">Lindt Chocolate</p>
+                <p class="shop-item-price">$9.99</p>
+                <button class="btn shop-item-button">ADD TO CART</button>
+            </div>
+            <div class="shop-item">
+                <p class="shop-item-title">Coffee beans</p>
+                <p class="shop-item-price">$7.49</p>
+                <button class="btn shop-item-button">ADD TO CART</button>
+            </div>
+            <div class="shop-item">
+                <p class="shop-item-title">Strawberries</p>
+                <p class="shop-item-price">$3.10</p>
+                <button class="btn shop-item-button">ADD TO CART</button>
+            </div>
+            <div class="shop-item">
+                <p class="shop-item-title">Flowers</p>
+                <p class="shop-item-price">$15.90</p>
+                <button class="btn shop-item-button">ADD TO CART</button>
+            </div>
+            <div class="shop-item">
+                <p class="shop-item-title">Teddy Bear</p>
+                <p class="shop-item-price">$21.99</p>
+                <button class="btn shop-item-button">ADD TO CART</button>
+            </div>
+        </div>
+    
+        <h2>Cart</h2>
+        <div class="cart-header-row">
+            <p class="cart-header">ITEM</p>
+            <p class="cart-header">PRICE</p>
+            <p class="cart-header">QUANTITY</p>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong>Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+    </div>
 
-    <h2>Shopping Cart</h2>
-    <table id="shopping-cart">
-        <tr>
-            <th>Item</th>
-            <th>Price</th>
-            <th>Quantity</th>
-        </tr>
-    </table>
 
     <script src="main.js"></script>
 </body>

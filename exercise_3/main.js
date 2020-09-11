@@ -9,7 +9,7 @@ startButton.addEventListener('click', startGame)
 let mole = document.getElementsByClassName('mole')[0]
 
 function startGame(event) {
-    let myGame = setInterval(appearMole, 2800)
+    let myGame = setInterval(appearMole, 2500)
     setTimeout(function() { 
         clearInterval( myGame );
         alert('Game over')
@@ -20,7 +20,7 @@ function appearMole() {
     const randomMoleHole = moleHoles[Math.floor(Math.random() * moleHoles.length)];
     randomMoleHole.classList.add('mole')
     randomMoleHole.addEventListener('click', addPoint)
-    setTimeout(removeMole, 800, randomMoleHole)
+    setTimeout(removeMole, 600, randomMoleHole)
 }
 
 
